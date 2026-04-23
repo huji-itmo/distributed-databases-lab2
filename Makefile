@@ -35,6 +35,10 @@ sync:
 sync_reserve:
 	bash scripts/sync_reserve.sh
 
+.PHONY: sync_reserve2
+sync_reserve2:
+	bash scripts/sync_reserve2.sh
+
 .PHONY: forward
 forward:
 	ssh -L ${PORT}:localhost:${PORT} -N helios_pg
